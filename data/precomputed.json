@@ -1,0 +1,1460 @@
+{
+  "primary-care": {
+    "note": "PRIMARY CARE FOLLOW-UP — SYNTHETIC PATIENT SYN-1042\n58-year-old presents for a 3-month follow-up of type 2 diabetes mellitus and hypertension.\nReports good adherence to medications but admits to frequent snacking in the evenings.\nDenies chest pain, shortness of breath, or vision changes.\nVitals: BP 148/92 mmHg, HR 76 bpm, Temp 98.4 F, SpO2 98% on room air.\nWeight 212 lb, BMI 31.4.\nFingerstick glucose today was 186 mg/dL.\nCurrent medications: metformin 1000 mg PO twice daily and lisinopril 10 mg PO once daily.\nAtorvastatin 20 mg nightly was started last year for hyperlipidemia.\nAllergies: penicillin (hives).\nAssessment: type 2 diabetes, not at goal. Hypertension, above target.\nPlan: increase lisinopril to 20 mg daily. Order hemoglobin A1c and basic metabolic panel.\nReferral to nutrition counseling. Return to clinic in 3 months.",
+    "sentences": [
+      {
+        "id": 0,
+        "text": "PRIMARY CARE FOLLOW-UP — SYNTHETIC PATIENT SYN-1042",
+        "start": 0,
+        "end": 51
+      },
+      {
+        "id": 1,
+        "text": "58-year-old presents for a 3-month follow-up of type 2 diabetes mellitus and hypertension.",
+        "start": 52,
+        "end": 142
+      },
+      {
+        "id": 2,
+        "text": "Reports good adherence to medications but admits to frequent snacking in the evenings.",
+        "start": 143,
+        "end": 229
+      },
+      {
+        "id": 3,
+        "text": "Denies chest pain, shortness of breath, or vision changes.",
+        "start": 230,
+        "end": 288
+      },
+      {
+        "id": 4,
+        "text": "Vitals: BP 148/92 mmHg, HR 76 bpm, Temp 98.4 F, SpO2 98% on room air.",
+        "start": 289,
+        "end": 358
+      },
+      {
+        "id": 5,
+        "text": "Weight 212 lb, BMI 31.4.",
+        "start": 359,
+        "end": 383
+      },
+      {
+        "id": 6,
+        "text": "Fingerstick glucose today was 186 mg/dL.",
+        "start": 384,
+        "end": 424
+      },
+      {
+        "id": 7,
+        "text": "Current medications: metformin 1000 mg PO twice daily and lisinopril 10 mg PO once daily.",
+        "start": 425,
+        "end": 514
+      },
+      {
+        "id": 8,
+        "text": "Atorvastatin 20 mg nightly was started last year for hyperlipidemia.",
+        "start": 515,
+        "end": 583
+      },
+      {
+        "id": 9,
+        "text": "Allergies: penicillin (hives).",
+        "start": 584,
+        "end": 614
+      },
+      {
+        "id": 10,
+        "text": "Assessment: type 2 diabetes, not at goal.",
+        "start": 615,
+        "end": 656
+      },
+      {
+        "id": 11,
+        "text": "Hypertension, above target.",
+        "start": 657,
+        "end": 684
+      },
+      {
+        "id": 12,
+        "text": "Plan: increase lisinopril to 20 mg daily.",
+        "start": 685,
+        "end": 726
+      },
+      {
+        "id": 13,
+        "text": "Order hemoglobin A1c and basic metabolic panel.",
+        "start": 727,
+        "end": 774
+      },
+      {
+        "id": 14,
+        "text": "Referral to nutrition counseling.",
+        "start": 775,
+        "end": 808
+      },
+      {
+        "id": 15,
+        "text": "Return to clinic in 3 months.",
+        "start": 809,
+        "end": 838
+      }
+    ],
+    "facts": [
+      {
+        "category": "diagnosis",
+        "value": "type 2 diabetes mellitus",
+        "quote": "type 2 diabetes mellitus",
+        "status": "active",
+        "id": "f0",
+        "grounding": "grounded",
+        "span": {
+          "start": 100,
+          "end": 124
+        },
+        "sentenceIds": [
+          1
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "hypertension",
+        "quote": "hypertension",
+        "status": "active",
+        "id": "f1",
+        "grounding": "grounded",
+        "span": {
+          "start": 129,
+          "end": 141
+        },
+        "sentenceIds": [
+          1,
+          11
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "BP 148/92 mmHg",
+        "quote": "BP 148/92 mmHg",
+        "vitalType": "blood_pressure",
+        "measurement": "148/92",
+        "unit": "mmHg",
+        "id": "f2",
+        "grounding": "grounded",
+        "span": {
+          "start": 297,
+          "end": 311
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "HR 76 bpm",
+        "quote": "HR 76 bpm",
+        "vitalType": "heart_rate",
+        "measurement": "76",
+        "unit": "bpm",
+        "id": "f3",
+        "grounding": "grounded",
+        "span": {
+          "start": 313,
+          "end": 322
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "Temp 98.4 F",
+        "quote": "Temp 98.4 F",
+        "vitalType": "temperature",
+        "measurement": "98.4",
+        "unit": "F",
+        "id": "f4",
+        "grounding": "grounded",
+        "span": {
+          "start": 324,
+          "end": 335
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "SpO2 98%",
+        "quote": "SpO2 98%",
+        "vitalType": "oxygen_saturation",
+        "measurement": "98",
+        "unit": "%",
+        "id": "f5",
+        "grounding": "grounded",
+        "span": {
+          "start": 337,
+          "end": 345
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "Weight 212 lb",
+        "quote": "Weight 212 lb",
+        "vitalType": "weight",
+        "measurement": "212",
+        "unit": "lb",
+        "id": "f6",
+        "grounding": "grounded",
+        "span": {
+          "start": 359,
+          "end": 372
+        },
+        "sentenceIds": [
+          5
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "BMI 31.4",
+        "quote": "BMI 31.4",
+        "vitalType": "bmi",
+        "measurement": "31.4",
+        "id": "f7",
+        "grounding": "grounded",
+        "span": {
+          "start": 374,
+          "end": 382
+        },
+        "sentenceIds": [
+          5
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "Fingerstick glucose 186 mg/dL",
+        "quote": "Fingerstick glucose today was 186 mg/dL",
+        "vitalType": "blood_glucose",
+        "measurement": "186",
+        "unit": "mg/dL",
+        "id": "f8",
+        "grounding": "grounded",
+        "span": {
+          "start": 384,
+          "end": 423
+        },
+        "sentenceIds": [
+          6
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "metformin 1000 mg PO twice daily",
+        "quote": "metformin 1000 mg PO twice daily",
+        "status": "active",
+        "dose": "1000 mg",
+        "route": "PO",
+        "frequency": "twice daily",
+        "id": "f9",
+        "grounding": "grounded",
+        "span": {
+          "start": 446,
+          "end": 478
+        },
+        "sentenceIds": [
+          7
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "lisinopril 10 mg PO once daily",
+        "quote": "lisinopril 10 mg PO once daily",
+        "status": "active",
+        "dose": "10 mg",
+        "route": "PO",
+        "frequency": "once daily",
+        "id": "f10",
+        "grounding": "grounded",
+        "span": {
+          "start": 483,
+          "end": 513
+        },
+        "sentenceIds": [
+          7
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "Atorvastatin 20 mg nightly",
+        "quote": "Atorvastatin 20 mg nightly",
+        "status": "active",
+        "dose": "20 mg",
+        "frequency": "nightly",
+        "id": "f11",
+        "grounding": "grounded",
+        "span": {
+          "start": 515,
+          "end": 541
+        },
+        "sentenceIds": [
+          8
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "hyperlipidemia",
+        "quote": "hyperlipidemia",
+        "status": "active",
+        "id": "f12",
+        "grounding": "grounded",
+        "span": {
+          "start": 568,
+          "end": 582
+        },
+        "sentenceIds": [
+          8
+        ]
+      },
+      {
+        "category": "allergy",
+        "value": "penicillin",
+        "quote": "penicillin",
+        "reaction": "hives",
+        "id": "f13",
+        "grounding": "grounded",
+        "span": {
+          "start": 595,
+          "end": 605
+        },
+        "sentenceIds": [
+          9
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "type 2 diabetes",
+        "quote": "type 2 diabetes",
+        "status": "active",
+        "id": "f14",
+        "grounding": "grounded",
+        "span": {
+          "start": 627,
+          "end": 642
+        },
+        "sentenceIds": [
+          10
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "lisinopril 20 mg daily",
+        "quote": "lisinopril to 20 mg daily",
+        "status": "changed",
+        "dose": "20 mg",
+        "frequency": "daily",
+        "id": "f16",
+        "grounding": "grounded",
+        "span": {
+          "start": 700,
+          "end": 725
+        },
+        "sentenceIds": [
+          12
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "Order hemoglobin A1c and basic metabolic panel",
+        "quote": "Order hemoglobin A1c and basic metabolic panel",
+        "id": "f17",
+        "grounding": "grounded",
+        "span": {
+          "start": 727,
+          "end": 773
+        },
+        "sentenceIds": [
+          13
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "Referral to nutrition counseling",
+        "quote": "Referral to nutrition counseling",
+        "id": "f18",
+        "grounding": "grounded",
+        "span": {
+          "start": 775,
+          "end": 807
+        },
+        "sentenceIds": [
+          14
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "Return to clinic in 3 months",
+        "quote": "Return to clinic in 3 months",
+        "timeframe": "in 3 months",
+        "id": "f19",
+        "grounding": "grounded",
+        "span": {
+          "start": 809,
+          "end": 837
+        },
+        "sentenceIds": [
+          15
+        ]
+      }
+    ],
+    "stats": {
+      "model": "gemini-3.5-flash-lite",
+      "latencyMs": 3463,
+      "totalFacts": 19,
+      "groundedFacts": 19,
+      "ungroundedFacts": 0,
+      "inputTokens": 685,
+      "outputTokens": 1033
+    }
+  },
+  "urgent-care": {
+    "note": "URGENT CARE NOTE — SYNTHETIC PATIENT SYN-2207\n24-year-old with a history of mild persistent asthma presents with 2 days of wheezing and cough after a viral illness.\nUsing albuterol inhaler 4 to 5 times daily with partial relief.\nNo fever reported at home.\nVitals: HR 104, RR 22, Temp 99.1 F, SpO2 94% on room air.\nDiffuse expiratory wheezes on exam, no accessory muscle use.\nReceived one albuterol-ipratropium nebulizer treatment in clinic with improvement; repeat SpO2 97%.\nDiagnosis: acute asthma exacerbation, likely triggered by viral upper respiratory infection.\nStart prednisone 40 mg by mouth daily for 5 days.\nContinue albuterol 2 puffs every 4 hours as needed.\nStart fluticasone 110 mcg inhaler 2 puffs twice daily.\nNo known drug allergies.\nReturn precautions reviewed: go to the emergency department for worsening shortness of breath.\nFollow up with primary care in 1 week.",
+    "sentences": [
+      {
+        "id": 0,
+        "text": "URGENT CARE NOTE — SYNTHETIC PATIENT SYN-2207",
+        "start": 0,
+        "end": 45
+      },
+      {
+        "id": 1,
+        "text": "24-year-old with a history of mild persistent asthma presents with 2 days of wheezing and cough after a viral illness.",
+        "start": 46,
+        "end": 164
+      },
+      {
+        "id": 2,
+        "text": "Using albuterol inhaler 4 to 5 times daily with partial relief.",
+        "start": 165,
+        "end": 228
+      },
+      {
+        "id": 3,
+        "text": "No fever reported at home.",
+        "start": 229,
+        "end": 255
+      },
+      {
+        "id": 4,
+        "text": "Vitals: HR 104, RR 22, Temp 99.1 F, SpO2 94% on room air.",
+        "start": 256,
+        "end": 313
+      },
+      {
+        "id": 5,
+        "text": "Diffuse expiratory wheezes on exam, no accessory muscle use.",
+        "start": 314,
+        "end": 374
+      },
+      {
+        "id": 6,
+        "text": "Received one albuterol-ipratropium nebulizer treatment in clinic with improvement; repeat SpO2 97%.",
+        "start": 375,
+        "end": 474
+      },
+      {
+        "id": 7,
+        "text": "Diagnosis: acute asthma exacerbation, likely triggered by viral upper respiratory infection.",
+        "start": 475,
+        "end": 567
+      },
+      {
+        "id": 8,
+        "text": "Start prednisone 40 mg by mouth daily for 5 days.",
+        "start": 568,
+        "end": 617
+      },
+      {
+        "id": 9,
+        "text": "Continue albuterol 2 puffs every 4 hours as needed.",
+        "start": 618,
+        "end": 669
+      },
+      {
+        "id": 10,
+        "text": "Start fluticasone 110 mcg inhaler 2 puffs twice daily.",
+        "start": 670,
+        "end": 724
+      },
+      {
+        "id": 11,
+        "text": "No known drug allergies.",
+        "start": 725,
+        "end": 749
+      },
+      {
+        "id": 12,
+        "text": "Return precautions reviewed: go to the emergency department for worsening shortness of breath.",
+        "start": 750,
+        "end": 844
+      },
+      {
+        "id": 13,
+        "text": "Follow up with primary care in 1 week.",
+        "start": 845,
+        "end": 883
+      }
+    ],
+    "facts": [
+      {
+        "category": "diagnosis",
+        "value": "Asthma",
+        "quote": "mild persistent asthma",
+        "status": "history",
+        "id": "f0",
+        "grounding": "grounded",
+        "span": {
+          "start": 76,
+          "end": 98
+        },
+        "sentenceIds": [
+          1
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "Albuterol inhaler 4 to 5 times daily",
+        "quote": "albuterol inhaler 4 to 5 times daily",
+        "status": "active",
+        "frequency": "4 to 5 times daily",
+        "id": "f1",
+        "grounding": "grounded",
+        "span": {
+          "start": 171,
+          "end": 207
+        },
+        "sentenceIds": [
+          2
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "HR 104 bpm",
+        "quote": "HR 104",
+        "vitalType": "heart_rate",
+        "measurement": "104",
+        "unit": "bpm",
+        "id": "f2",
+        "grounding": "grounded",
+        "span": {
+          "start": 264,
+          "end": 270
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "RR 22 /min",
+        "quote": "RR 22",
+        "vitalType": "respiratory_rate",
+        "measurement": "22",
+        "unit": "/min",
+        "id": "f3",
+        "grounding": "grounded",
+        "span": {
+          "start": 272,
+          "end": 277
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "Temp 99.1 F",
+        "quote": "Temp 99.1 F",
+        "vitalType": "temperature",
+        "measurement": "99.1",
+        "unit": "F",
+        "id": "f4",
+        "grounding": "grounded",
+        "span": {
+          "start": 279,
+          "end": 290
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "SpO2 94% on room air",
+        "quote": "SpO2 94% on room air",
+        "vitalType": "oxygen_saturation",
+        "measurement": "94",
+        "unit": "%",
+        "id": "f5",
+        "grounding": "grounded",
+        "span": {
+          "start": 292,
+          "end": 312
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "SpO2 97%",
+        "quote": "SpO2 97%",
+        "vitalType": "oxygen_saturation",
+        "measurement": "97",
+        "unit": "%",
+        "id": "f6",
+        "grounding": "grounded",
+        "span": {
+          "start": 465,
+          "end": 473
+        },
+        "sentenceIds": [
+          6
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "Acute asthma exacerbation",
+        "quote": "acute asthma exacerbation",
+        "status": "active",
+        "id": "f7",
+        "grounding": "grounded",
+        "span": {
+          "start": 486,
+          "end": 511
+        },
+        "sentenceIds": [
+          7
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "Prednisone 40 mg by mouth daily for 5 days",
+        "quote": "prednisone 40 mg by mouth daily for 5 days",
+        "status": "new",
+        "dose": "40 mg",
+        "route": "by mouth",
+        "frequency": "daily",
+        "id": "f8",
+        "grounding": "grounded",
+        "span": {
+          "start": 574,
+          "end": 616
+        },
+        "sentenceIds": [
+          8
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "Albuterol 2 puffs every 4 hours as needed",
+        "quote": "albuterol 2 puffs every 4 hours as needed",
+        "status": "active",
+        "route": "inhalational",
+        "frequency": "every 4 hours as needed",
+        "id": "f9",
+        "grounding": "grounded",
+        "span": {
+          "start": 627,
+          "end": 668
+        },
+        "sentenceIds": [
+          9
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "Fluticasone 110 mcg inhaler 2 puffs twice daily",
+        "quote": "fluticasone 110 mcg inhaler 2 puffs twice daily",
+        "status": "new",
+        "dose": "110 mcg",
+        "frequency": "twice daily",
+        "id": "f10",
+        "grounding": "grounded",
+        "span": {
+          "start": 676,
+          "end": 723
+        },
+        "sentenceIds": [
+          10
+        ]
+      },
+      {
+        "category": "allergy",
+        "value": "No known drug allergies",
+        "quote": "No known drug allergies",
+        "id": "f11",
+        "grounding": "grounded",
+        "span": {
+          "start": 725,
+          "end": 748
+        },
+        "sentenceIds": [
+          11
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "Follow up with primary care in 1 week",
+        "quote": "Follow up with primary care in 1 week",
+        "timeframe": "in 1 week",
+        "id": "f12",
+        "grounding": "grounded",
+        "span": {
+          "start": 845,
+          "end": 882
+        },
+        "sentenceIds": [
+          13
+        ]
+      }
+    ],
+    "stats": {
+      "model": "gemini-3.5-flash-lite",
+      "latencyMs": 3489,
+      "totalFacts": 13,
+      "groundedFacts": 13,
+      "ungroundedFacts": 0,
+      "inputTokens": 668,
+      "outputTokens": 748
+    }
+  },
+  "cardiology": {
+    "note": "CARDIOLOGY CONSULT — SYNTHETIC PATIENT SYN-3318\n71-year-old referred for worsening exertional dyspnea and bilateral leg swelling over 3 weeks.\nPast medical history includes heart failure with reduced ejection fraction, paroxysmal atrial fibrillation, and chronic kidney disease stage 3.\nPrior myocardial infarction in 2019, treated with stent placement.\nBP 132/78, HR 88 irregular, RR 18, SpO2 95%. Weight 189 lb, up 6 lb from last visit.\nEchocardiogram last month showed an ejection fraction of 30%.\nHome medications: carvedilol 12.5 mg twice daily, sacubitril-valsartan 49/51 mg twice daily, apixaban 5 mg twice daily.\nHe stopped furosemide 2 weeks ago on his own because of urinary frequency.\nAllergic to sulfa drugs, which caused a rash.\nImpression: acute on chronic systolic heart failure, volume overloaded after diuretic discontinuation.\nRestart furosemide 40 mg by mouth daily.\nCheck BMP and NT-proBNP in 1 week.\nDaily weights at home; call if weight increases by more than 3 lb in a day.\nCardiology follow-up in 2 weeks.",
+    "sentences": [
+      {
+        "id": 0,
+        "text": "CARDIOLOGY CONSULT — SYNTHETIC PATIENT SYN-3318",
+        "start": 0,
+        "end": 47
+      },
+      {
+        "id": 1,
+        "text": "71-year-old referred for worsening exertional dyspnea and bilateral leg swelling over 3 weeks.",
+        "start": 48,
+        "end": 142
+      },
+      {
+        "id": 2,
+        "text": "Past medical history includes heart failure with reduced ejection fraction, paroxysmal atrial fibrillation, and chronic kidney disease stage 3.",
+        "start": 143,
+        "end": 286
+      },
+      {
+        "id": 3,
+        "text": "Prior myocardial infarction in 2019, treated with stent placement.",
+        "start": 287,
+        "end": 353
+      },
+      {
+        "id": 4,
+        "text": "BP 132/78, HR 88 irregular, RR 18, SpO2 95%.",
+        "start": 354,
+        "end": 398
+      },
+      {
+        "id": 5,
+        "text": "Weight 189 lb, up 6 lb from last visit.",
+        "start": 399,
+        "end": 438
+      },
+      {
+        "id": 6,
+        "text": "Echocardiogram last month showed an ejection fraction of 30%.",
+        "start": 439,
+        "end": 500
+      },
+      {
+        "id": 7,
+        "text": "Home medications: carvedilol 12.5 mg twice daily, sacubitril-valsartan 49/51 mg twice daily, apixaban 5 mg twice daily.",
+        "start": 501,
+        "end": 620
+      },
+      {
+        "id": 8,
+        "text": "He stopped furosemide 2 weeks ago on his own because of urinary frequency.",
+        "start": 621,
+        "end": 695
+      },
+      {
+        "id": 9,
+        "text": "Allergic to sulfa drugs, which caused a rash.",
+        "start": 696,
+        "end": 741
+      },
+      {
+        "id": 10,
+        "text": "Impression: acute on chronic systolic heart failure, volume overloaded after diuretic discontinuation.",
+        "start": 742,
+        "end": 844
+      },
+      {
+        "id": 11,
+        "text": "Restart furosemide 40 mg by mouth daily.",
+        "start": 845,
+        "end": 885
+      },
+      {
+        "id": 12,
+        "text": "Check BMP and NT-proBNP in 1 week.",
+        "start": 886,
+        "end": 920
+      },
+      {
+        "id": 13,
+        "text": "Daily weights at home; call if weight increases by more than 3 lb in a day.",
+        "start": 921,
+        "end": 996
+      },
+      {
+        "id": 14,
+        "text": "Cardiology follow-up in 2 weeks.",
+        "start": 997,
+        "end": 1029
+      }
+    ],
+    "facts": [
+      {
+        "category": "diagnosis",
+        "value": "worsening exertional dyspnea",
+        "quote": "worsening exertional dyspnea",
+        "status": "active",
+        "id": "f0",
+        "grounding": "grounded",
+        "span": {
+          "start": 73,
+          "end": 101
+        },
+        "sentenceIds": [
+          1
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "bilateral leg swelling",
+        "quote": "bilateral leg swelling",
+        "status": "active",
+        "id": "f1",
+        "grounding": "grounded",
+        "span": {
+          "start": 106,
+          "end": 128
+        },
+        "sentenceIds": [
+          1
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "heart failure with reduced ejection fraction",
+        "quote": "heart failure with reduced ejection fraction",
+        "status": "history",
+        "id": "f2",
+        "grounding": "grounded",
+        "span": {
+          "start": 173,
+          "end": 217
+        },
+        "sentenceIds": [
+          2
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "paroxysmal atrial fibrillation",
+        "quote": "paroxysmal atrial fibrillation",
+        "status": "history",
+        "id": "f3",
+        "grounding": "grounded",
+        "span": {
+          "start": 219,
+          "end": 249
+        },
+        "sentenceIds": [
+          2
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "chronic kidney disease stage 3",
+        "quote": "chronic kidney disease stage 3",
+        "status": "history",
+        "id": "f4",
+        "grounding": "grounded",
+        "span": {
+          "start": 255,
+          "end": 285
+        },
+        "sentenceIds": [
+          2
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "Prior myocardial infarction",
+        "quote": "Prior myocardial infarction",
+        "status": "history",
+        "id": "f5",
+        "grounding": "grounded",
+        "span": {
+          "start": 287,
+          "end": 314
+        },
+        "sentenceIds": [
+          3
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "BP 132/78 mmHg",
+        "quote": "132/78",
+        "vitalType": "blood_pressure",
+        "measurement": "132/78",
+        "unit": "mmHg",
+        "id": "f6",
+        "grounding": "grounded",
+        "span": {
+          "start": 357,
+          "end": 363
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "HR 88 bpm",
+        "quote": "88",
+        "vitalType": "heart_rate",
+        "measurement": "88",
+        "unit": "bpm",
+        "id": "f7",
+        "grounding": "grounded",
+        "span": {
+          "start": 368,
+          "end": 370
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "RR 18 breaths/min",
+        "quote": "18",
+        "vitalType": "respiratory_rate",
+        "measurement": "18",
+        "unit": "breaths/min",
+        "id": "f8",
+        "grounding": "grounded",
+        "span": {
+          "start": 385,
+          "end": 387
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "SpO2 95%",
+        "quote": "95%",
+        "vitalType": "oxygen_saturation",
+        "measurement": "95",
+        "unit": "%",
+        "id": "f9",
+        "grounding": "grounded",
+        "span": {
+          "start": 394,
+          "end": 397
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "Weight 189 lb",
+        "quote": "189 lb",
+        "vitalType": "weight",
+        "measurement": "189",
+        "unit": "lb",
+        "id": "f10",
+        "grounding": "grounded",
+        "span": {
+          "start": 406,
+          "end": 412
+        },
+        "sentenceIds": [
+          5
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "carvedilol 12.5 mg twice daily",
+        "quote": "carvedilol 12.5 mg twice daily",
+        "status": "active",
+        "dose": "12.5 mg",
+        "frequency": "twice daily",
+        "id": "f11",
+        "grounding": "grounded",
+        "span": {
+          "start": 519,
+          "end": 549
+        },
+        "sentenceIds": [
+          7
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "sacubitril-valsartan 49/51 mg twice daily",
+        "quote": "sacubitril-valsartan 49/51 mg twice daily",
+        "status": "active",
+        "dose": "49/51 mg",
+        "frequency": "twice daily",
+        "id": "f12",
+        "grounding": "grounded",
+        "span": {
+          "start": 551,
+          "end": 592
+        },
+        "sentenceIds": [
+          7
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "apixaban 5 mg twice daily",
+        "quote": "apixaban 5 mg twice daily",
+        "status": "active",
+        "dose": "5 mg",
+        "frequency": "twice daily",
+        "id": "f13",
+        "grounding": "grounded",
+        "span": {
+          "start": 594,
+          "end": 619
+        },
+        "sentenceIds": [
+          7
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "furosemide",
+        "quote": "furosemide",
+        "status": "discontinued",
+        "id": "f14",
+        "grounding": "grounded",
+        "span": {
+          "start": 632,
+          "end": 642
+        },
+        "sentenceIds": [
+          8
+        ]
+      },
+      {
+        "category": "allergy",
+        "value": "Sulfa drugs",
+        "quote": "sulfa drugs",
+        "reaction": "rash",
+        "id": "f15",
+        "grounding": "grounded",
+        "span": {
+          "start": 708,
+          "end": 719
+        },
+        "sentenceIds": [
+          9
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "acute on chronic systolic heart failure",
+        "quote": "acute on chronic systolic heart failure",
+        "status": "active",
+        "id": "f16",
+        "grounding": "grounded",
+        "span": {
+          "start": 754,
+          "end": 793
+        },
+        "sentenceIds": [
+          10
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "volume overloaded",
+        "quote": "volume overloaded",
+        "status": "active",
+        "id": "f17",
+        "grounding": "grounded",
+        "span": {
+          "start": 795,
+          "end": 812
+        },
+        "sentenceIds": [
+          10
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "furosemide 40 mg by mouth daily",
+        "quote": "furosemide 40 mg by mouth daily",
+        "status": "new",
+        "dose": "40 mg",
+        "route": "by mouth",
+        "frequency": "daily",
+        "id": "f18",
+        "grounding": "grounded",
+        "span": {
+          "start": 853,
+          "end": 884
+        },
+        "sentenceIds": [
+          11
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "Check BMP and NT-proBNP in 1 week",
+        "quote": "Check BMP and NT-proBNP in 1 week",
+        "timeframe": "in 1 week",
+        "id": "f19",
+        "grounding": "grounded",
+        "span": {
+          "start": 886,
+          "end": 919
+        },
+        "sentenceIds": [
+          12
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "Cardiology follow-up in 2 weeks",
+        "quote": "Cardiology follow-up in 2 weeks",
+        "timeframe": "in 2 weeks",
+        "id": "f20",
+        "grounding": "grounded",
+        "span": {
+          "start": 997,
+          "end": 1028
+        },
+        "sentenceIds": [
+          14
+        ]
+      }
+    ],
+    "stats": {
+      "model": "gemini-3.5-flash-lite",
+      "latencyMs": 3043,
+      "totalFacts": 21,
+      "groundedFacts": 21,
+      "ungroundedFacts": 0,
+      "inputTokens": 714,
+      "outputTokens": 1070
+    }
+  },
+  "post-op": {
+    "note": "ORTHOPEDIC POST-OPERATIVE VISIT — SYNTHETIC PATIENT SYN-4471\n66-year-old seen 2 weeks after right total knee arthroplasty for severe osteoarthritis.\nPain is controlled at 3/10 with acetaminophen 1000 mg every 8 hours.\nOxycodone 5 mg as needed was discontinued last week.\nTaking aspirin 81 mg twice daily for DVT prophylaxis, to continue for 4 more weeks.\nAlso has hypothyroidism, managed with levothyroxine 75 mcg daily.\nVitals: BP 126/80, HR 72, Temp 98.2 F.\nIncision is clean, dry, and intact with no signs of infection.\nKnee flexion to 95 degrees.\nAllergy to codeine causes nausea.\nPlan: continue outpatient physical therapy three times weekly.\nStaples removed today.\nFollow up in 4 weeks with repeat knee X-ray.",
+    "sentences": [
+      {
+        "id": 0,
+        "text": "ORTHOPEDIC POST-OPERATIVE VISIT — SYNTHETIC PATIENT SYN-4471",
+        "start": 0,
+        "end": 60
+      },
+      {
+        "id": 1,
+        "text": "66-year-old seen 2 weeks after right total knee arthroplasty for severe osteoarthritis.",
+        "start": 61,
+        "end": 148
+      },
+      {
+        "id": 2,
+        "text": "Pain is controlled at 3/10 with acetaminophen 1000 mg every 8 hours.",
+        "start": 149,
+        "end": 217
+      },
+      {
+        "id": 3,
+        "text": "Oxycodone 5 mg as needed was discontinued last week.",
+        "start": 218,
+        "end": 270
+      },
+      {
+        "id": 4,
+        "text": "Taking aspirin 81 mg twice daily for DVT prophylaxis, to continue for 4 more weeks.",
+        "start": 271,
+        "end": 354
+      },
+      {
+        "id": 5,
+        "text": "Also has hypothyroidism, managed with levothyroxine 75 mcg daily.",
+        "start": 355,
+        "end": 420
+      },
+      {
+        "id": 6,
+        "text": "Vitals: BP 126/80, HR 72, Temp 98.2 F.",
+        "start": 421,
+        "end": 459
+      },
+      {
+        "id": 7,
+        "text": "Incision is clean, dry, and intact with no signs of infection.",
+        "start": 460,
+        "end": 522
+      },
+      {
+        "id": 8,
+        "text": "Knee flexion to 95 degrees.",
+        "start": 523,
+        "end": 550
+      },
+      {
+        "id": 9,
+        "text": "Allergy to codeine causes nausea.",
+        "start": 551,
+        "end": 584
+      },
+      {
+        "id": 10,
+        "text": "Plan: continue outpatient physical therapy three times weekly.",
+        "start": 585,
+        "end": 647
+      },
+      {
+        "id": 11,
+        "text": "Staples removed today.",
+        "start": 648,
+        "end": 670
+      },
+      {
+        "id": 12,
+        "text": "Follow up in 4 weeks with repeat knee X-ray.",
+        "start": 671,
+        "end": 715
+      }
+    ],
+    "facts": [
+      {
+        "category": "diagnosis",
+        "value": "severe osteoarthritis",
+        "quote": "severe osteoarthritis",
+        "status": "history",
+        "id": "f0",
+        "grounding": "grounded",
+        "span": {
+          "start": 126,
+          "end": 147
+        },
+        "sentenceIds": [
+          1
+        ]
+      },
+      {
+        "category": "diagnosis",
+        "value": "hypothyroidism",
+        "quote": "hypothyroidism",
+        "status": "active",
+        "id": "f1",
+        "grounding": "grounded",
+        "span": {
+          "start": 364,
+          "end": 378
+        },
+        "sentenceIds": [
+          5
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "acetaminophen 1000 mg every 8 hours",
+        "quote": "acetaminophen 1000 mg every 8 hours",
+        "status": "active",
+        "dose": "1000 mg",
+        "frequency": "every 8 hours",
+        "id": "f2",
+        "grounding": "grounded",
+        "span": {
+          "start": 181,
+          "end": 216
+        },
+        "sentenceIds": [
+          2
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "Oxycodone 5 mg as needed",
+        "quote": "Oxycodone 5 mg as needed",
+        "status": "discontinued",
+        "dose": "5 mg",
+        "frequency": "as needed",
+        "id": "f3",
+        "grounding": "grounded",
+        "span": {
+          "start": 218,
+          "end": 242
+        },
+        "sentenceIds": [
+          3
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "aspirin 81 mg twice daily",
+        "quote": "aspirin 81 mg twice daily",
+        "status": "active",
+        "dose": "81 mg",
+        "frequency": "twice daily",
+        "id": "f4",
+        "grounding": "grounded",
+        "span": {
+          "start": 278,
+          "end": 303
+        },
+        "sentenceIds": [
+          4
+        ]
+      },
+      {
+        "category": "medication",
+        "value": "levothyroxine 75 mcg daily",
+        "quote": "levothyroxine 75 mcg daily",
+        "status": "active",
+        "dose": "75 mcg",
+        "frequency": "daily",
+        "id": "f5",
+        "grounding": "grounded",
+        "span": {
+          "start": 393,
+          "end": 419
+        },
+        "sentenceIds": [
+          5
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "BP 126/80 mmHg",
+        "quote": "126/80",
+        "vitalType": "blood_pressure",
+        "measurement": "126/80",
+        "unit": "mmHg",
+        "id": "f6",
+        "grounding": "grounded",
+        "span": {
+          "start": 432,
+          "end": 438
+        },
+        "sentenceIds": [
+          6
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "HR 72 bpm",
+        "quote": "72",
+        "vitalType": "heart_rate",
+        "measurement": "72",
+        "unit": "bpm",
+        "id": "f7",
+        "grounding": "grounded",
+        "span": {
+          "start": 443,
+          "end": 445
+        },
+        "sentenceIds": [
+          6
+        ]
+      },
+      {
+        "category": "vital",
+        "value": "Temp 98.2 F",
+        "quote": "98.2 F",
+        "vitalType": "temperature",
+        "measurement": "98.2",
+        "unit": "F",
+        "id": "f8",
+        "grounding": "grounded",
+        "span": {
+          "start": 452,
+          "end": 458
+        },
+        "sentenceIds": [
+          6
+        ]
+      },
+      {
+        "category": "allergy",
+        "value": "codeine",
+        "quote": "codeine",
+        "reaction": "nausea",
+        "id": "f9",
+        "grounding": "grounded",
+        "span": {
+          "start": 562,
+          "end": 569
+        },
+        "sentenceIds": [
+          9
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "continue outpatient physical therapy three times weekly",
+        "quote": "continue outpatient physical therapy three times weekly",
+        "id": "f10",
+        "grounding": "grounded",
+        "span": {
+          "start": 591,
+          "end": 646
+        },
+        "sentenceIds": [
+          10
+        ]
+      },
+      {
+        "category": "follow_up",
+        "value": "Follow up in 4 weeks with repeat knee X-ray",
+        "quote": "Follow up in 4 weeks with repeat knee X-ray",
+        "timeframe": "in 4 weeks",
+        "id": "f11",
+        "grounding": "grounded",
+        "span": {
+          "start": 671,
+          "end": 714
+        },
+        "sentenceIds": [
+          12
+        ]
+      }
+    ],
+    "stats": {
+      "model": "gemini-3.5-flash-lite",
+      "latencyMs": 2754,
+      "totalFacts": 12,
+      "groundedFacts": 12,
+      "ungroundedFacts": 0,
+      "inputTokens": 626,
+      "outputTokens": 859
+    }
+  }
+}
