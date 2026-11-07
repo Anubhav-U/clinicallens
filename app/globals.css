@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f3f4f6;
+  --paper: #ffffff;
+  --surface-2: #eceef1;
+  --border: #dcdfe4;
+  --ink: #171a1f;
+  --muted: #5d6470;
+  --focus: #2457c5;
+
+  /* Highlighter pen */
+  --hl: rgba(255, 213, 0, 0.55);
+  --hl-soft: rgba(255, 213, 0, 0.12);
+
+  /* Category ticks: muted, print-like */
+  --c-dx: #b42318;
+  --c-rx: #2457c5;
+  --c-vital: #0f766e;
+  --c-allergy: #a15c07;
+  --c-plan: #4d7c0f;
+  color-scheme: light;
+}
+
+/* Dark tokens: follow the system unless the user picked a theme (data-theme on <html>). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d0f12;
+    --paper: #15181d;
+    --surface-2: #1c2026;
+    --border: #2a2f37;
+    --ink: #e7e9ec;
+    --muted: #9198a4;
+    --focus: #84a9ff;
+    --hl: rgba(250, 204, 21, 0.32);
+    --hl-soft: rgba(250, 204, 21, 0.07);
+    --c-dx: #f97066;
+    --c-rx: #84a9ff;
+    --c-vital: #5fd4c0;
+    --c-allergy: #fdb022;
+    --c-plan: #a6d26b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d0f12;
+  --paper: #15181d;
+  --surface-2: #1c2026;
+  --border: #2a2f37;
+  --ink: #e7e9ec;
+  --muted: #9198a4;
+  --focus: #84a9ff;
+  --hl: rgba(250, 204, 21, 0.32);
+  --hl-soft: rgba(250, 204, 21, 0.07);
+  --c-dx: #f97066;
+  --c-rx: #84a9ff;
+  --c-vital: #5fd4c0;
+  --c-allergy: #fdb022;
+  --c-plan: #a6d26b;
+  color-scheme: dark;
+}
+
+/* Smooth theme switch (only while toggling, so normal interactions stay snappy). */
+:root.theme-switching,
+:root.theme-switching * {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease !important;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-paper: var(--paper);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-focus: var(--focus);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+  --font-serif: var(--font-serif-doc);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Everything clickable gets a pointer (Tailwind v4 resets buttons to default). */
+button:not(:disabled),
+[role="button"],
+a[href],
+label[for],
+select,
+summary {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Highlighter-pen mark: drawn left to right by animating background-size. */
+.hl {
+  color: inherit;
+  background-color: transparent;
+  background-image: linear-gradient(var(--hl), var(--hl));
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  border-radius: 2px;
+  padding: 0 1px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Paper sheet */
+.paper {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 1px 0 rgba(16, 24, 40, 0.03),
+    0 1px 3px rgba(16, 24, 40, 0.06);
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+.skeleton {
+  background: var(--surface-2);
+  animation: pulse-soft 1.6s ease-in-out infinite;
+}
+
+/* Swipeable on touch, no visible scrollbar (used by the tab row). */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.pane-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+}
