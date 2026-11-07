@@ -4,7 +4,7 @@
 
 > **Synthetic data only.** Every note in this repo and demo was written for it and describes no real person. Don't paste real patient information.
 
-**Eval:** 96.9% precision / 96.9% recall on a hand-labeled set ([results](eval/RESULTS.md)) · light and dark themes · responsive
+**Live demo:** [clinicallens-au.vercel.app](https://clinicallens-au.vercel.app/) · **Eval:** 96.9% precision / 96.9% recall on a hand-labeled set ([results](eval/RESULTS.md)) · light and dark themes · responsive
 
 ![Hovering a medication highlights the exact quote in the source note](docs/screenshots/result-linked.png)
 
@@ -63,7 +63,7 @@ I deliberately didn't tune the prompt against these cases, so the numbers stay a
 - **Model choice, measured.** On the free tier, `gemini-3.8-flash` took **80–240 s per note**. A benchmark ([`scripts/bench.ts`](scripts/bench.ts)) showed `gemini-3.5-flash-lite` with minimal thinking at **~3 s**, still with every fact verified, so it's the default. Extraction is lookup, not reasoning. The model and thinking level are env-configurable, and the provider sits behind a small interface ([`lib/llm/types.ts`](lib/llm/types.ts)), so swapping in another model is one file.
 - **A prompt fix that made things worse.** Telling the model "never list an item twice" removed duplicates, but it also silently dropped real diagnoses. I reverted it and moved deduplication into deterministic code.
 - **Zero-cost demo path.** The bundled samples are run once through the real pipeline (`npm run precompute`) and served from saved results. Only pasted notes call the API.
-- **Abuse protection.** Notes are capped at 8,000 characters and oversized bodies are rejected before parsing. Upstash rate limits apply per IP and globally per day, and they fail open if Redis is down. Transient model failures are retried once; quota errors are not.
+- **Abuse and cost protection.** Notes are capped at 8,000 characters and oversized bodies are rejected before parsing. The demo runs on the Gemini free tier with billing disabled, so the worst case is a used-up daily quota, never a bill; the bundled samples keep working because they never call the API. Rate limiting (per IP and globally per day, via Upstash) is built in and turns on when the Upstash env vars are set. It fails open if Redis is down and isn't enabled on the public demo. Transient model failures are retried once; quota errors are not.
 - **Client robustness.** Leaving the loading screen aborts the request, so a late response can't pull you back. Non-JSON gateway errors become readable messages. On touch devices, hover preview is disabled so selections can't get stuck.
 - **FHIR R4 export** ([`lib/fhir.ts`](lib/fhir.ts)) maps facts to `Condition`, `MedicationStatement`, `Observation`, and `AllergyIntolerance`:
   - vitals use LOINC codes (blood pressure is split into systolic/diastolic components)
@@ -83,7 +83,7 @@ I deliberately didn't tune the prompt against these cases, so the numbers stay a
 
 ## Tech stack
 
-Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Motion · Google Gemini API (`@google/genai`, structured JSON output) · Zod · Upstash Redis · Vitest · Vercel
+Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Motion · Google Gemini API (`@google/genai`, structured JSON output) · Zod · Upstash Redis (optional) · Vitest · Vercel
 
 ## Run locally
 
@@ -100,7 +100,7 @@ npm run dev                  # http://localhost:3000
 | `npm run precompute` | Regenerates saved results for the bundled samples |
 | `npx tsx --env-file=.env.local scripts/bench.ts cardiology` | Latency/grounding check for one sample |
 
-Rate limiting is optional locally; without Upstash env vars it's skipped with a warning.
+Rate limiting is optional; without the Upstash env vars it's skipped with a warning.
 
 ## Project structure
 
